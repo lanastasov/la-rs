@@ -1,0 +1,2 @@
+# la-rs
+Rust repo
