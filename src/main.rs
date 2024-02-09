@@ -2,6 +2,8 @@ mod demo {
     pub mod demo;
 }
 
+mod demo2;
+
 use std::env;
 
 fn main() {
@@ -15,4 +17,7 @@ fn main() {
 
     // 1.
     demo::demo::log_mod();
+
+    // 2.
+    demo2::demo2::log_mod();
 }
