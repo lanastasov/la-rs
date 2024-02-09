@@ -4,6 +4,8 @@ mod demo {
 
 mod demo2;
 
+mod demo3;
+
 use std::env;
 
 fn main() {
@@ -20,4 +22,7 @@ fn main() {
 
     // 2.
     demo2::demo2::log_mod();
+
+    // 3.
+    demo3::demo3::log_mod();
 }
