@@ -11,6 +11,8 @@ mod demo4;
 mod demo5;
 use crate::demo5::log_mod;
 
+mod demo6;
+
 use std::env;
 
 fn main() {
@@ -39,4 +41,7 @@ fn main() {
 
     // 5.2
     log_mod();
+
+    // 6
+    demo6::log_mod();
 }
