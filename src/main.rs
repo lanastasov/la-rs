@@ -13,6 +13,10 @@ use crate::demo5::log_mod;
 
 mod demo6;
 
+mod fake_bin {
+    pub mod fake_bin;
+}
+
 use std::env;
 
 fn main() {
@@ -44,4 +48,7 @@ fn main() {
 
     // 6
     demo6::log_mod();
+
+    // 7.
+    println!("{:?}", fake_bin::fake_bin::fake_bin("45385593107843568"));
 }
