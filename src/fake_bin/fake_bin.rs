@@ -7,12 +7,14 @@ pub fn fake_bin(s: &str) -> String {
 // pub fn chars(&self) -> Chars<'_>
 
 // A)
+
 //`(&self)`: The method takes a reference to itself (&self)
 // as its only parameter, meaning it does not take ownership
 // of the string slice, nor does it mutate it. It operates on
 // an immutable reference to a string slice.
 
-//B)
+// B)
+
 //`-> Chars<'_>`: This indicates the return type of the method.
 // Chars is an iterator type defined in the standard library,
 // specifically for iterating over characters (char) of a string
@@ -24,3 +26,20 @@ pub fn fake_bin(s: &str) -> String {
 // &self it was called on. This ensures that the iterator does not
 // outlive the string slice it's iterating over, which would result
 // in accessing invalid memory.
+
+// C)
+
+// fn map<B, F>(self, f: F) -> Map<Self, F>
+// where
+//     Self: Sized,
+//     F: FnMut(Self::Item) -> B,
+
+// Map is Struct std::iter::Map
+
+// D)
+
+// fn collect<B>(self) -> B
+// where
+//     B: FromIterator<Self::Item>,
+//     Self: Sized,
+// Transforms an iterator into a collection. Read more
