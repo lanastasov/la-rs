@@ -17,6 +17,10 @@ mod fake_bin {
     pub mod fake_bin;
 }
 
+mod greet_me {
+    pub mod greet_me;
+}
+
 use std::env;
 
 fn main() {
@@ -51,4 +55,8 @@ fn main() {
 
     // 7.
     println!("{:?}", fake_bin::fake_bin::fake_bin("45385593107843568"));
+
+    // 8.
+    println!("{:?}", greet_me::greet_me::greet("riley"));
+    println!("{:?}", greet_me::greet_me::greet("JACK"));
 }
