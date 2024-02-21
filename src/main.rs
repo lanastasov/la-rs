@@ -21,6 +21,10 @@ mod greet_me {
     pub mod greet_me;
 }
 
+mod categorize_new_member {
+    pub mod categorize_new_member;
+}
+
 use std::env;
 
 fn main() {
@@ -59,4 +63,15 @@ fn main() {
     // 8.
     println!("{:?}", greet_me::greet_me::greet("riley"));
     println!("{:?}", greet_me::greet_me::greet("JACK"));
+
+    // 9.
+    println!(
+        "{:?}",
+        categorize_new_member::categorize_new_member::open_or_senior(vec![
+            (45, 12),
+            (55, 21),
+            (19, -2),
+            (104, 20),
+        ])
+    );
 }
