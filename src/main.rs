@@ -25,6 +25,10 @@ mod categorize_new_member {
     pub mod categorize_new_member;
 }
 
+mod balanced_number {
+    pub mod balanced_number;
+}
+
 use std::env;
 
 fn main() {
@@ -74,4 +78,8 @@ fn main() {
             (104, 20),
         ])
     );
+
+    // 10.
+    println!("{:?}", balanced_number::balanced_number::balanced_num(959));
+    println!("{:?}", balanced_number::balanced_number::balanced_num(9519));
 }
