@@ -24,6 +24,9 @@ mod greet_me {
 mod categorize_new_member {
     pub mod categorize_new_member;
 }
+mod check_exam {
+    pub mod check_exam;
+}
 
 mod balanced_number {
     pub mod balanced_number;
@@ -82,4 +85,7 @@ fn main() {
     // 10.
     println!("{:?}", balanced_number::balanced_number::balanced_num(959));
     println!("{:?}", balanced_number::balanced_number::balanced_num(9519));
+
+    // 11.
+    println!("check_examp : {:?}", check_exam::check_exam::check_exam(&["a", "a", "b", "b"], &["a", "c", "b", "d"]))
 }
